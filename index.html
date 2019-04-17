@@ -1,0 +1,80 @@
+<html>
+
+	<head>
+      <meta charset = "utf-8" />
+	  <title>时光深处的愿望</title>
+
+		<style> 
+		    body {
+				background: #e6c4f7;
+			}
+
+			#control {
+                position: absolute;
+                left: 1030px;
+                top: 40px;
+                width: 300px;
+                height: 50px;
+            }
+
+            
+            #canvas {
+                position: absolute;
+                left: 20px;
+                top: 40px;
+                background: #ffffff;
+                cursor: pointer;
+                margin: 0 auto;
+                -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+                -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+                box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+			}
+            
+            #help {
+                position: absolute;
+                left: 1030px;
+                top: 140px;
+                background: #ffffff;
+                cursor: pointer;
+                margin: 0 auto;
+            }
+
+		</style>
+   </head>
+
+  <body>
+      <div id='control'>
+      	Type:
+      	<select id='type'>
+        	<option value='ordinary'>ordinary</option>
+        	<option value='advanced'>advanced</option>
+        </select>
+            <input id="animateButton" type="button" value="开始游戏" />
+      </div>
+      
+      <canvas id='canvas' width='1000' height='600'>
+            Wish you well.
+      </canvas> 
+      <canvas id='help' width='300' height='500'>
+            Wish you well.
+      </canvas>
+      
+      <audio id="BG" loop="-1"> 
+            Sorry,you coudn't listen good music.
+      </audio>
+      <audio id="Piu" >
+            Sorry,you coudn't listen good music.
+      </audio>
+      <audio id="Sad" >
+            Sorry,you coudn't listen good music.
+      </audio>
+      <audio id="Happy" >
+            Sorry,you coudn't listen good music.
+      </audio>
+      
+      <script src='js/draw.js'></script>
+      <script src='js/music.js'></script>
+      <script src='js/ordinary.js'></script>
+      <script src='js/advanced.js'></script>
+  </body>
+</html>
